@@ -8,7 +8,7 @@ $alter-color: #247de8;
 $alter-color_light: #72a7e7;
 $alter-color_dark: #257de9;
 
-$alert-color: #DB1818;
+$alert-color: #247de8;
 
 $block-width: 1170px;
 
@@ -2966,6 +2966,7 @@ section{
 				letter-spacing: calc(10*14px/1000);
 			}
 			&:last-child{
+				margin-top: 50px;
 				white-space: pre-line;
 				font-size: 16px;
 				letter-spacing: calc(10*16px/1000);
@@ -3013,7 +3014,7 @@ section{
 			}
 		}
 		.order{
-			margin-bottom: 80px;
+			margin-bottom: 30px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
