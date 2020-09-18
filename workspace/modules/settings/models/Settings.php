@@ -11,7 +11,7 @@ class Settings extends Model
 {
     protected $table = "settings";
 
-    public $fillable = ['key', 'value', 'label'];
+    public $fillable = ['key', 'value'];
 
     /**
      * @param SettingsSearchRequest $request
@@ -26,9 +26,6 @@ class Settings extends Model
 
         if ($request->value)
             $query->where('value', 'LIKE', "%$request->value%");
-
-        if ($request->label)
-            $query->where('value', 'LIKE', "%$request->label%");
 
         return $query->get();
     }

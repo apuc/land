@@ -1,6 +1,7 @@
 {capture name=css}
     <link rel="stylesheet" href="/resources/landing/css/styles.css">
     <link rel="stylesheet" href="/resources/landing/css/fonts.css">
+    <link rel="stylesheet" href="/resources/landing/css/animate.min.css">
 {/capture}
 
 {capture name=js_head}

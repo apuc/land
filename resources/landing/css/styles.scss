@@ -8,7 +8,7 @@ $alter-color: #247de8;
 $alter-color_light: #72a7e7;
 $alter-color_dark: #257de9;
 
-$alert-color: #7C1111;
+$alert-color: #DB1818;
 
 $block-width: 1170px;
 
@@ -45,6 +45,7 @@ body{
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .btn-order{
@@ -2139,7 +2140,7 @@ section{
 	position: relative;
 	&_back{
 		width: 100%;
-		height: 100%;
+		height: 0;
 		img{
 			display: block;
 			position: absolute;
@@ -2827,9 +2828,9 @@ section{
 						content: url("../img/s6_check.png");
 						display: block;
 						position: absolute;
-						top: 0;
+						top: 50%;
 						left: 0;
-						transform: translate(-100%, 0);
+						transform: translate(-100%, -50%);
 					}
 				}
 			}
@@ -3537,8 +3538,8 @@ section{
 			&.alert{
 				display: none;
 				margin: 0 auto 15px auto;
-				font-size: 18px;
-				color: $alert-color;
+				font-size: 15px;
+				color: $primary-color;
 			}
 		}
 		&_apps{

@@ -57,7 +57,7 @@ function btnOrderPopup(){
 		else{
 			phone = false;
 		}
-		
+
 		if(isRadio == true && user == true && phone == true){
 			alertText.css("display", "none");
 			$('.js-popup-order').removeClass('open');
@@ -109,12 +109,12 @@ function popupThankOpen(){
 function blockAnimation(blockClass, blockAnimationClass, blockAnimationOutClass, topOffset = 80){
 	var visibleOffset = document.documentElement.clientHeight;
 	var flag = true;
-	$(window).scroll(function(event) {
+	$(".mainWrapper").scroll(function(event) {
 		$(blockClass).each(function(index, el){
 			if (!flag)
-	        {
-	            return;
-	        }
+			{
+				return;
+			}
 			//верхняя граница целевого блока попадает в верхние x процентов экрана
 			if(el.getBoundingClientRect().top < (visibleOffset/100 * topOffset) && $(this).hasClass('hidden')){
 				$(this).removeClass(blockAnimationOutClass).removeClass('hidden').addClass(blockAnimationClass);
@@ -166,11 +166,11 @@ $(document).ready(function(){
 
 	blockAnimation(".js-ourWork-head-animated", "animate__flipInX", "animate__flipOutX");
 	blockAnimation(".js-ourWork-b1-animated", "animate__zoomIn", "animate__zoomOut");
-		blockAnimation(".js-ourWork-b1-task-animated", "animate__lightSpeedInLeft", "animate__lightSpeedOutLeft");
-		blockAnimation(".js-ourWork-b1-result-animated", "animate__lightSpeedInLeft", "animate__lightSpeedOutLeft");
+	blockAnimation(".js-ourWork-b1-task-animated", "animate__lightSpeedInLeft", "animate__lightSpeedOutLeft");
+	blockAnimation(".js-ourWork-b1-result-animated", "animate__lightSpeedInLeft", "animate__lightSpeedOutLeft");
 	blockAnimation(".js-ourWork-b2-animated", "animate__zoomIn", "animate__zoomOut");
-		blockAnimation(".js-ourWork-b2-task-animated", "animate__lightSpeedInRight", "animate__lightSpeedOutRight");
-		blockAnimation(".js-ourWork-b2-result-animated", "animate__lightSpeedInRight", "animate__lightSpeedOutRight");
+	blockAnimation(".js-ourWork-b2-task-animated", "animate__lightSpeedInRight", "animate__lightSpeedOutRight");
+	blockAnimation(".js-ourWork-b2-result-animated", "animate__lightSpeedInRight", "animate__lightSpeedOutRight");
 	blockAnimation(".js-ourWork-aside-animated", "animate__fadeIn", "animate__fadeOut");
 	blockAnimation(".js-ourWork-after-animated", "animate__fadeIn", "animate__fadeOut");
 	blockAnimation(".js-ourWork-btn-animated", "animate__rotateIn", "animate__rotateOut");
@@ -185,10 +185,10 @@ $(document).ready(function(){
 
 	blockAnimation(".js-price-head-animated", "animate__flipInX", "animate__flipOutX");
 	blockAnimation(".js-price-block-animated", "animate__fadeIn", "animate__fadeOut");
-		blockAnimation(".js-price-blockHead-animated", "animate__flipInX", "animate__flipOutX");
-		blockAnimation(".js-price-l1-animated", "animate__fadeInLeft", "animate__fadeOutLeft");
-		blockAnimation(".js-price-l2-animated", "animate__fadeInRight", "animate__fadeOutRight");
-		blockAnimation(".js-price-l3-animated", "animate__fadeInLeft", "animate__fadeOutLeft");
-		blockAnimation(".js-price-l4-animated", "animate__bounceIn", "animate__bounceOut");
+	blockAnimation(".js-price-blockHead-animated", "animate__flipInX", "animate__flipOutX");
+	blockAnimation(".js-price-l1-animated", "animate__fadeInLeft", "animate__fadeOutLeft");
+	blockAnimation(".js-price-l2-animated", "animate__fadeInRight", "animate__fadeOutRight");
+	blockAnimation(".js-price-l3-animated", "animate__fadeInLeft", "animate__fadeOutLeft");
+	blockAnimation(".js-price-l4-animated", "animate__bounceIn", "animate__bounceOut");
 	blockAnimation(".js-price-connection-animated", "animate__zoomInUp", "animate__zoomOut");
 });

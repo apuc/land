@@ -26,19 +26,7 @@ class SettingsController extends Controller
         $request = new SettingsSearchRequest();
         $model = Settings::search($request);
 
-        $options = [
-            'serial' => '#',
-            'fields' => [
-                'key' => 'Ключ',
-                'category' => [
-                    'label' => 'Значение',
-                    'value' => function($model) { return $model->value; }
-                ]
-            ],
-            'baseUri' => 'settings'
-        ];
-
-        return $this->render('settings/settings.tpl', ['h1' => 'Настройки', 'model' => $model, 'options' => $options]);
+        return $this->render('settings/index.tpl', ['h1' => 'Настройки', 'options' => $this->setOptions($model)]);
     }
 
     public function actionView($id)
@@ -88,5 +76,21 @@ class SettingsController extends Controller
     public function actionDelete()
     {
         Settings::where('id', $_POST['id'])->delete();
+    }
+
+    public function setOptions($data)
+    {
+        return [
+            'data' => $data,
+            'serial' => '#',
+            'fields' => [
+                'key' => 'Ключ',
+                'category' => [
+                    'label' => 'Значение',
+                    'value' => function($model) { return $model->value; }
+                ]
+            ],
+            'baseUri' => 'settings'
+        ];
     }
 }
