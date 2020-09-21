@@ -5,6 +5,9 @@ namespace workspace\controllers;
 use core\App;
 use core\component_manager\lib\Mod;
 use core\Controller;
+use core\Debug;
+use workspace\modules\customer\models\Customer;
+use workspace\modules\settings\models\Settings;
 use workspace\modules\users\models\User;
 use workspace\requests\LoginRequest;
 use workspace\requests\RegistrationRequest;
@@ -15,16 +18,22 @@ class MainController extends Controller
 {
     public function actionIndex()
     {
-        $mod = new Mod();
         $this->view->setTitle('Заказать лендинг');
         $this->setLayout('front.tpl');
 
-        $buttons[0] = '<a href="/codegen" class="btn btn-dark">CodeGen</a>';
-        $buttons[1] = '<a href="/modules" class="btn btn-dark">Модули</a>';
-        if ($mod->getModInfo('adminlte')['status'] == 'active')
-            $buttons[2] = '<a href="/admin/adminlte" class="btn btn-dark">AdminLTE</a>';
+        $phone = Settings::where('key', 'phone')->first();
+        $price = Settings::where('key', 'price')->first();
+        $social = Settings::where('key', 'social')->get();
 
-        return $this->render('main/index.tpl', ['h1' => App::$config['app_name'], 'buttons' => $buttons]);
+        return $this->render('main/index.tpl', ['phone' => $phone->value, 'price' => $price->value, 'social' => $social]);
+    }
+
+    public function actionAddOrder()
+    {
+        $customer = new Customer();
+        $customer->_save();
+
+        $this->redirect('');
     }
 
     public function actionLanguage()
@@ -35,9 +44,9 @@ class MainController extends Controller
     public function actionSignUp()
     {
         $this->view->setTitle('Sign Up');
-        
+
         $request = new RegistrationRequest();
-        
+
         if ($request->isPost() && $request->validate()) {
             $model = new User();
             $model->_save($request);

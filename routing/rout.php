@@ -26,3 +26,5 @@ App::$collector->any('module-set-inactive', ['workspace\controllers\ModulesContr
 App::$collector->any('module-delete', ['workspace\controllers\ModulesController', 'actionModuleDelete']);
 App::$collector->any('change-version', ['workspace\controllers\ModulesController', 'actionChangeVersion']);
 App::$collector->any('update-manifest', ['workspace\controllers\ModulesController', 'actionAddLocalModulesToManifest']);
+
+App::$collector->any('add-order', ['workspace\controllers\MainController', 'actionAddOrder']);

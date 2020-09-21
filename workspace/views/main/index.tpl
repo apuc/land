@@ -21,7 +21,7 @@
                 <a href="tel:+380994902454">
                     <img src="/resources/landing/img/icons/phone.png" alt="">
                     <div class="text">
-                        <p>+38 099 490 24 54</p>
+                        <p>{$phone}</p>
                         <p>связь в Telegram/WhatsApp/Viber</p>
                     </div>
                 </a>
@@ -94,8 +94,10 @@
                         <div class="text">
                             <h3>Мы НЕ ДЕЛАЕМ лендинги
                                 на конструкторах</h3>
-                            <p>Заказывая лендинг в нашей компании Вы получаете массу возможностей и никаких ограничений!</p>
-                            <p>Мы не используем шаблоны! Наши лендинги грузятся моментально! Любые интеграции и нетипичные задачи - легко!</p>
+                            <p>Заказывая лендинг в нашей компании Вы получаете массу возможностей и никаких
+                                ограничений!</p>
+                            <p>Мы не используем шаблоны! Наши лендинги грузятся моментально! Любые интеграции и
+                                нетипичные задачи - легко!</p>
                         </div>
                         <div class="imgs">
                             <img src="/resources/landing/img/points.png" alt="">
@@ -180,7 +182,9 @@
                             <p> Не копируй существующие варианты веб-страниц</p>
                         </header>
                         <footer>
-                            <p>Уникальный интернет-сайт создается для определенных целей, учитывая специфику деятельности заказчика. Проще говоря – разработанная с нуля веб-страница приносит гораздо больше отдачи, чем бледная копия.
+                            <p>Уникальный интернет-сайт создается для определенных целей, учитывая специфику
+                                деятельности заказчика. Проще говоря – разработанная с нуля веб-страница приносит
+                                гораздо больше отдачи, чем бледная копия.
                             </p>
                         </footer>
                     </div>
@@ -191,7 +195,10 @@
                             <p>Не используй метод шаблонной разработки</p>
                         </header>
                         <footer>
-                            <p>Обученные горьким опытом заказчики веб-страниц всегда интересуются, пользуется ли исполнитель шаблонами. Обжигавшиеся на недобросовестных разработчиках клиенты стараются подыскивать профессионалов, которые занимаются созданием авторских интернет-продуктов.</p>
+                            <p>Обученные горьким опытом заказчики веб-страниц всегда интересуются, пользуется ли
+                                исполнитель шаблонами. Обжигавшиеся на недобросовестных разработчиках клиенты стараются
+                                подыскивать профессионалов, которые занимаются созданием авторских
+                                интернет-продуктов.</p>
                         </footer>
                     </div>
 
@@ -203,7 +210,9 @@
                             <p>Не торопись сдавать проект</p>
                         </header>
                         <footer>
-                            <p>Взявшись за создание веб-страницы, не стоит подгонять события. Спешка может негативно повлиять на цифры конверсии – соотношения суммарного количества посетителей сайта к тем, кто выполнил целевые действия.</p>
+                            <p>Взявшись за создание веб-страницы, не стоит подгонять события. Спешка может негативно
+                                повлиять на цифры конверсии – соотношения суммарного количества посетителей сайта к тем,
+                                кто выполнил целевые действия.</p>
                         </footer>
                     </div>
 
@@ -214,7 +223,9 @@
                             <p>Не доверяй бюджетным методам</p>
                         </header>
                         <footer>
-                            <p>Дешевые методы никогда не позволят создать веб-страницу с высоким уровнем отдачи. Опытный интернет-маркетолог со 100% уверенностью подтвердит, что не существует заветной кнопки, которая мигом вдвое-втрое повысит конверсию сайта.</p>
+                            <p>Дешевые методы никогда не позволят создать веб-страницу с высоким уровнем отдачи. Опытный
+                                интернет-маркетолог со 100% уверенностью подтвердит, что не существует заветной кнопки,
+                                которая мигом вдвое-втрое повысит конверсию сайта.</p>
                         </footer>
                     </div>
 
@@ -266,7 +277,7 @@
                         <div class="wrapper">
                             <p>Нарисуем
                                 эмоциональный дизайн,
-                                побуждающий	<span>оставить
+                                побуждающий <span>оставить
 							заявку</span></p>
                             <img src="/resources/landing/img/s3_b2-2.png" alt="">
                             <img src="/resources/landing/img/s3_b2-3.png" alt="">
@@ -339,7 +350,8 @@
 
                 <div class="ourWork_block block_1 js-ourWork-b1-animated animate__animated hidden">
                     <h4>Создание проекта
-                        для <a href="https://www.behance.net/gallery/94781373/Marketing-agency-landing-design">маркетингового Агентства</a></h4>
+                        для <a href="https://www.behance.net/gallery/94781373/Marketing-agency-landing-design">маркетингового
+                            Агентства</a></h4>
                     <div class="ourWork_block_info">
                         <div class="ourWork_block_info_text">
                             <div class="ourWork_block_info_text_task js-ourWork-b1-task-animated animate__animated hidden">
@@ -387,7 +399,8 @@
 
                 <div class="ourWork_block block_2 js-ourWork-b2-animated animate__animated hidden">
                     <h4>Создание проекта
-                        для <a href="https://www.behance.net/gallery/99938435/razrabotka-dizajna-lendinga-kosmetologicheskoj-kliniki">косметологической
+                        для
+                        <a href="https://www.behance.net/gallery/99938435/razrabotka-dizajna-lendinga-kosmetologicheskoj-kliniki">косметологической
                             клиники</a></h4>
                     <div class="ourWork_block_info">
                         <div class="ourWork_block_info_text">
@@ -432,7 +445,8 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn-order js-ourWork-btn-animated animate__animated hidden">Заказать</button>
+                <button type="button" class="btn-order js-ourWork-btn-animated animate__animated hidden">Заказать
+                </button>
             </div>
         </section>
 
@@ -518,7 +532,8 @@
                 </div>
 
                 <div class="price_block js-price-block-animated animate__animated hidden">
-                    <p class="price_block_header js-price-blockHead-animated animate__animated hidden">Стоимость создания лендинг пейдж от 35000 руб.
+                    <p class="price_block_header js-price-blockHead-animated animate__animated hidden">Стоимость
+                        создания лендинг пейдж от {$price} руб.
                         На вашем лендинге будет:</p>
 
                     <div class="price_block_line l1 js-price-l1-animated animate__animated hidden">
@@ -586,29 +601,30 @@
                 </div>
 
                 <div class="price_connection js-price-connection-animated animate__animated hidden">
-                    <form id="form-order" name="order" action="">
+                    <form id="form-order" name="order" method="post" action="add-order">
                         <div class="title">
                             <h2>Давайте обсудим вашу задачу</h2>
                         </div>
                         <p>Выберите удобный
                             способ связи</p>
                         <div class="icons">
-                            <input type="radio" id="telegram" name="app" value="telegram">
+                            <input type="radio" id="telegram" name="social_network" class="social_network" value="telegram">
                             <label for="telegram">
                                 <img src="/resources/landing/img/icons/telegram.png" alt="">
                             </label>
 
-                            <input type="radio" id="whatsApp" name="app" value="whatsApp">
+                            <input type="radio" id="whatsApp" name="social_network" class="social_network" value="whatsApp">
                             <label for="whatsApp">
                                 <img src="/resources/landing/img/icons/whatsapp.png" alt="">
                             </label>
-                            <input type="radio" id="viber" name="app" value="viber">
+
+                            <input type="radio" id="viber" name="social_network" class="social_network" value="viber">
                             <label for="viber">
                                 <img src="/resources/landing/img/icons/viber.png" alt="">
                             </label>
                         </div>
                         <div class="order">
-                            <input type="tel" class="phone js-phone" placeholder="+7 (___) ___-__-__">
+                            <input type="tel" class="phone js-phone" name="phone" id="customer_phone1" placeholder="+7 (___) ___-__-__">
                             <button type="button" class="btn-order">
                                 Перезвоните мне
                             </button>
@@ -630,29 +646,30 @@
                     <hr>
                     <hr>
                 </button>
-                <form id="form-order-popup" name="order_popup" action="">
+                <form id="form-order-popup" name="order_popup" method="post" action="add-order">
                     <header>
                         <h3>Заказать</h3>
                     </header>
 
                     <p>Выберите удобный способ связи</p>
                     <div class="popup_block_apps">
-                        <input type="radio" id="pop_telegram" name="app" value="telegram">
+                        <input type="radio" id="pop_telegram" name="social_network" class="social_network" value="telegram" required="required">
                         <label for="pop_telegram">
                             <img src="/resources/landing/img/icons/telegram.png" alt="">
                         </label>
 
-                        <input type="radio" id="pop_whatsApp" name="app" value="whatsApp">
+                        <input type="radio" id="pop_whatsApp" name="social_network" class="social_network" value="whatsApp" required="required">
                         <label for="pop_whatsApp">
                             <img src="/resources/landing/img/icons/whatsapp.png" alt="">
                         </label>
-                        <input type="radio" id="pop_viber" name="app" value="viber">
+
+                        <input type="radio" id="pop_viber" name="social_network" class="social_network" value="viber" required="required">
                         <label for="pop_viber">
                             <img src="/resources/landing/img/icons/viber.png" alt="">
                         </label>
                     </div>
-                    <input type="text" name="userName" class="js-userName" placeholder="Представьтесь, пожалуйста">
-                    <input type="tel" name="userPhone" class="js-phone" placeholder="Номер телефона">
+                    <input type="text" id="customer_name" name="name" class="js-userName" required="required" placeholder="Представьтесь, пожалуйста">
+                    <input type="tel" id="customer_phone" name="phone" class="js-phone" required="required" placeholder="Номер телефона">
                     <p class="alert js-alert">Заполнены не все поля</p>
                     <button type="button" class="btn-order">
                         Заказать
