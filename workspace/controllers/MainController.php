@@ -23,7 +23,8 @@ class MainController extends Controller
 
         $phone = Settings::where('key', 'phone')->first();
         $price = Settings::where('key', 'price')->first();
-        $social = Settings::where('key', 'social')->get();
+        $social = Settings::where('key', 'Telegram')->orWhere('key', 'Viber')->orWhere('key', 'Whatsapp')
+            ->orWhere('key', 'Instagram')->get();
 
         return $this->render('main/index.tpl', ['phone' => $phone->value, 'price' => $price->value, 'social' => $social]);
     }

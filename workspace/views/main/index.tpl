@@ -12,10 +12,9 @@
                 <a href="#price">Стоимость</a>
             </div>
             <div class="header_messengers">
-                <a href="#"><img src="/resources/landing/img/icons/telegram.png" alt="Telegram"></a>
-                <a href="#"><img src="/resources/landing/img/icons/whatsapp.png" alt="WhatsApp"></a>
-                <a href="#"><img src="/resources/landing/img/icons/viber.png" alt="Viber"></a>
-                <a href="#"><img src="/resources/landing/img/icons/inst.png" alt="Instagram"></a>
+                {foreach from=$social item=item}
+                    <a href="{$item->value}"><img src="/resources/landing/img/icons/{strtolower($item->key)}.png" alt="{$item->key}"></a>
+                {/foreach}
             </div>
             <div class="header_phone">
                 <a href="tel:+380994902454">
@@ -42,16 +41,15 @@
             <a href="#"><img src="/resources/landing/img/logo.png" alt="logo"></a>
         </div>
         <div class="header_mobile_messengers">
-            <a href="#"><img src="/resources/landing/img/icons/telegram.png" alt="Telegram"></a>
-            <a href="#"><img src="/resources/landing/img/icons/whatsapp.png" alt="WhatsApp"></a>
-            <a href="#"><img src="/resources/landing/img/icons/viber.png" alt="Viber"></a>
-            <a href="#"><img src="/resources/landing/img/icons/inst.png" alt="Instagram"></a>
+            {foreach from=$social item=item}
+                <a href="{$item->value}"><img src="/resources/landing/img/icons/{strtolower($item->key)}.png" alt="{$item->key}"></a>
+            {/foreach}
         </div>
         <div class="header_mobile_phone">
             <a href="tel:+380994902454">
                 <img src="/resources/landing/img/icons/phone.png" alt="">
                 <div class="text">
-                    <p>+38 099 490 24 54</p>
+                    <p>{$phone}</p>
                     <p>связь в Telegram/WhatsApp/Viber</p>
                 </div>
             </a>
@@ -94,10 +92,14 @@
                         <div class="text">
                             <h3>Мы НЕ ДЕЛАЕМ лендинги
                                 на конструкторах</h3>
-                            <p>Заказывая лендинг в нашей компании Вы получаете массу возможностей и никаких
+                            <p>Заказывая лендинг в нашей
+                                компании Вы получаете массу
+                                возможностей и никаких
                                 ограничений!</p>
-                            <p>Мы не используем шаблоны! Наши лендинги грузятся моментально! Любые интеграции и
-                                нетипичные задачи - легко!</p>
+                            <p>Мы не используем шаблоны!
+                                Наши лендинги грузятся
+                                моментально! Любые интеграции
+                                и нетипичные задачи - легко!</p>
                         </div>
                         <div class="imgs">
                             <img src="/resources/landing/img/points.png" alt="">

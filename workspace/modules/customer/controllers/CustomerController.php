@@ -24,7 +24,7 @@ class CustomerController extends Controller
         $request = new CustomerSearchRequest();
         $model = Customer::search($request);
 
-        return $this->render('customer/index.tpl', ['h1' => 'Customer', 'options' => $this->setOptions($model)]);
+        return $this->render('customer/index.tpl', ['h1' => 'Заказчики', 'options' => $this->setOptions($model)]);
     }
 
     public function actionView($id)
