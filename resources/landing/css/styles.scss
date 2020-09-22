@@ -358,7 +358,34 @@ body{
 		}
 	}
 }
-
+/*.elevator{
+	z-index: 100;
+	width: 100px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition-duration: 0.3s;
+	display: flex;
+	cursor: pointer;
+	img{
+		display: block;
+		margin: 20px auto auto auto;
+		opacity: 0.5;
+		transition-duration: 0.3s;
+	}
+	&:hover{
+		background-color: transparentize($alter-color, .95);
+		img{
+			opacity: 1;
+		}
+	}
+	&.empty{
+		img{
+			opacity: 0.2;
+		}
+	}
+}*/
 .aside_block{
 	min-width: 230px;
 	position: absolute;
@@ -765,7 +792,6 @@ section{
 		left: 0;
 		width: 100%;
 		opacity: 0.03;
-  		animation: 10s linear infinite blink-text;
 		p{
 			text-align: center;
 			font-family: $title-font_main;
@@ -3666,7 +3692,7 @@ section{
 	transition-duration: 1s;
 }
 
-@keyframes blink-text{
+/*@keyframes blink-text{
 	0%{
 		opacity: 0.03;
 	}
@@ -3682,7 +3708,7 @@ section{
 	100%{
 		opacity: 0.03;
 	}
-}
+}*/
 
 @keyframes clouds{
 	0%{
