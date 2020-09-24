@@ -8,6 +8,15 @@
     <script src="/resources/landing/js/jquery-3.4.1.min.js"></script>
     <script src="/resources/landing/js/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script src="/resources/landing/js/scripts.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script src="/resources/landing/js/metrika_start.js"></script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/67610002" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178923966-1"></script>
+    <script src="/resources/landing/js/metrika_end.js"></script>
 {/capture}
 
 {capture name=js_body}

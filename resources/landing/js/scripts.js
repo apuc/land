@@ -33,6 +33,9 @@ function btnOrderPopup() {
     var user = false;
     var isRadio = false;
     btn.click(function () {
+        ym(67610002,'reachGoal','order');
+        gtag('event', 'order', { 'event_category': 'form', 'event_action': 'order', });
+
         //Валидация. Поблочно если вдруг возникнет желание выделять конкретные неправильные поля
         //Проверка выбора радио
         radio.each(function () {
@@ -89,6 +92,9 @@ function btnOrderBottom() {
     var alertText = $("#form-order .js-alert");
     var radio = $("#form-order .icons input");
     btn.click(function () {
+        ym(67610002,'reachGoal','details');
+        gtag('event', 'details', { 'event_category': 'form', 'event_action': 'details', });
+
         var isRadio = false;
         radio.each(function () {
             if ($(this).prop("checked")) {
